@@ -24,12 +24,12 @@ def load_model():
     clf.fit(X_train, y_train)
     clfr1.fit(X_train,y_train)
 
-    # calculate the print the accuracy score
+    # calculate and print the accuracy score
     acc = accuracy_score(y_test, clf.predict(X_test))
     print(f"Model trained using GaussianNB classfier with accuracy: {round(acc, 3)}")
     
 
-    # calculate the print the accuracy score
+    # calculate and print the accuracy score
     acc_1 = accuracy_score(y_test,clfr1.predict(X_test))
     print(f"Model trained using KNN classifier with accuracy: {round(acc_1, 3)}")
 
